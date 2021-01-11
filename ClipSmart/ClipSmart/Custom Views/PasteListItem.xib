@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PasteListItem" customModule="ClipSmart" customModuleProvider="target">
+            <connections>
+                <outlet property="copyItemLabel" destination="mCJ-WC-1Ii" id="YjO-tQ-3ho"/>
+                <outlet property="copyItemLabelScrollView" destination="vFo-4s-V0a" id="3yQ-Cv-sQx"/>
+                <outlet property="numberLabel" destination="jaA-Q4-DY3" id="kxa-OY-ixB"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="PasteListItem" customModule="ClipSmart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jaA-Q4-DY3">
+                    <rect key="frame" x="203" y="54" width="70" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Y4W-x1-th5"/>
+                    </constraints>
+                    <textFieldCell key="cell" truncatesLastVisibleLine="YES" alignment="center" title="1" drawsBackground="YES" id="dTU-5i-ikb">
+                        <font key="font" size="55" name="HelveticaNeue"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFo-4s-V0a">
+                    <rect key="frame" x="5" y="5" width="465" height="162"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="cvt-fD-bFt">
+                        <rect key="frame" x="0.0" y="0.0" width="465" height="162"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView editable="NO" selectable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="mCJ-WC-1Ii">
+                                <rect key="frame" x="0.0" y="0.0" width="465" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="minSize" width="465" height="162"/>
+                                <size key="maxSize" width="465" height="10000000"/>
+                                <attributedString key="textStorage">
+                                    <fragment content="Some Text">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </textView>
+                        </subviews>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="aJK-7l-ZBO">
+                        <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Ab5-d7-MHl">
+                        <rect key="frame" x="449" y="0.0" width="16" height="162"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vFo-4s-V0a" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="BFM-Rz-mle"/>
+                <constraint firstItem="vFo-4s-V0a" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Bda-mF-RRA"/>
+                <constraint firstAttribute="trailing" secondItem="vFo-4s-V0a" secondAttribute="trailing" constant="5" id="Bv0-yX-ANB"/>
+                <constraint firstItem="vFo-4s-V0a" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="KhC-zi-AWn"/>
+                <constraint firstItem="vFo-4s-V0a" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="cCG-Su-LTD"/>
+                <constraint firstAttribute="bottom" secondItem="vFo-4s-V0a" secondAttribute="bottom" constant="5" id="oYQ-sv-dfX"/>
+                <constraint firstItem="jaA-Q4-DY3" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="qzP-Fi-P8F"/>
+                <constraint firstItem="jaA-Q4-DY3" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="taZ-Bs-ZCo"/>
+            </constraints>
+            <point key="canvasLocation" x="137.5" y="184"/>
+        </customView>
+    </objects>
+</document>

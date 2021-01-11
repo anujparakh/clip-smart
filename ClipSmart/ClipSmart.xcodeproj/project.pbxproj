@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2444FD2587D57C00D60682 /* PasteListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2444FC2587D57C00D60682 /* PasteListItem.swift */; };
+		2B244503258818C700D60682 /* PasteListPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B244502258818C700D60682 /* PasteListPanel.swift */; };
+		2B24450625881B7F00D60682 /* PasteboardUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24450525881B7F00D60682 /* PasteboardUtility.swift */; };
+		2B65F9E3258C27E0007F9569 /* Check_Paste_AppleScript.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2B65F9E1258C27E0007F9569 /* Check_Paste_AppleScript.scpt */; };
+		2B65F9E4258C27E0007F9569 /* Paste_AppleScript.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2B65F9E2258C27E0007F9569 /* Paste_AppleScript.scpt */; };
+		2B877E682586CF3C009039CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B877E672586CF3C009039CB /* AppDelegate.swift */; };
+		2B877E6C2586CF3E009039CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B877E6B2586CF3E009039CB /* Assets.xcassets */; };
+		2B877E6F2586CF3E009039CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B877E6D2586CF3E009039CB /* Main.storyboard */; };
+		2B877E782586D25B009039CB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B877E772586D25B009039CB /* Utility.swift */; };
+		2B877E7B2586D2FD009039CB /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 2B877E7A2586D2FD009039CB /* Cartfile */; };
+		2B877E7E2586D3F0009039CB /* HotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B877E7D2586D3F0009039CB /* HotKey.framework */; };
+		2B877E7F2586D3F0009039CB /* HotKey.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B877E7D2586D3F0009039CB /* HotKey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BF677A7258965FE002B8B9E /* PasteListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF677A6258965FE002B8B9E /* PasteListItem.xib */; };
+		2BF677A9258968DB002B8B9E /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF677A8258968DB002B8B9E /* LoadableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B877E802586D3F0009039CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B877E7F2586D3F0009039CB /* HotKey.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B2444FC2587D57C00D60682 /* PasteListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteListItem.swift; sourceTree = "<group>"; };
+		2B244502258818C700D60682 /* PasteListPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteListPanel.swift; sourceTree = "<group>"; };
+		2B24450525881B7F00D60682 /* PasteboardUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardUtility.swift; sourceTree = "<group>"; };
+		2B65F9E1258C27E0007F9569 /* Check_Paste_AppleScript.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Check_Paste_AppleScript.scpt; sourceTree = "<group>"; };
+		2B65F9E2258C27E0007F9569 /* Paste_AppleScript.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Paste_AppleScript.scpt; sourceTree = "<group>"; };
+		2B877E642586CF3C009039CB /* ClipSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B877E672586CF3C009039CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B877E6B2586CF3E009039CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B877E6E2586CF3E009039CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B877E702586CF3E009039CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B877E712586CF3E009039CB /* ClipSmart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipSmart.entitlements; sourceTree = "<group>"; };
+		2B877E772586D25B009039CB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		2B877E7A2586D2FD009039CB /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		2B877E7D2586D3F0009039CB /* HotKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HotKey.framework; path = Carthage/Build/Mac/HotKey.framework; sourceTree = "<group>"; };
+		2BF677A6258965FE002B8B9E /* PasteListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteListItem.xib; sourceTree = "<group>"; };
+		2BF677A8258968DB002B8B9E /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B877E612586CF3C009039CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B877E7E2586D3F0009039CB /* HotKey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B24450425881B6700D60682 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2B877E772586D25B009039CB /* Utility.swift */,
+				2B24450525881B7F00D60682 /* PasteboardUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2B65F9E0258C27E0007F9569 /* AppleScripts */ = {
+			isa = PBXGroup;
+			children = (
+				2B65F9E1258C27E0007F9569 /* Check_Paste_AppleScript.scpt */,
+				2B65F9E2258C27E0007F9569 /* Paste_AppleScript.scpt */,
+			);
+			name = AppleScripts;
+			path = ClipSmart/AppleScripts;
+			sourceTree = "<group>";
+		};
+		2B877E5B2586CF3C009039CB = {
+			isa = PBXGroup;
+			children = (
+				2B877E7A2586D2FD009039CB /* Cartfile */,
+				2B65F9E0258C27E0007F9569 /* AppleScripts */,
+				2B877E662586CF3C009039CB /* ClipSmart */,
+				2B877E652586CF3C009039CB /* Products */,
+				2B877E7C2586D3F0009039CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B877E652586CF3C009039CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B877E642586CF3C009039CB /* ClipSmart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B877E662586CF3C009039CB /* ClipSmart */ = {
+			isa = PBXGroup;
+			children = (
+				2B877E672586CF3C009039CB /* AppDelegate.swift */,
+				2B24450425881B6700D60682 /* Utility */,
+				2B877E792586D269009039CB /* Custom Views */,
+				2B877E6B2586CF3E009039CB /* Assets.xcassets */,
+				2B877E6D2586CF3E009039CB /* Main.storyboard */,
+				2B877E702586CF3E009039CB /* Info.plist */,
+				2B877E712586CF3E009039CB /* ClipSmart.entitlements */,
+			);
+			path = ClipSmart;
+			sourceTree = "<group>";
+		};
+		2B877E792586D269009039CB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BF677A8258968DB002B8B9E /* LoadableView.swift */,
+				2B244502258818C700D60682 /* PasteListPanel.swift */,
+				2B2444FC2587D57C00D60682 /* PasteListItem.swift */,
+				2BF677A6258965FE002B8B9E /* PasteListItem.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2B877E7C2586D3F0009039CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B877E7D2586D3F0009039CB /* HotKey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B877E632586CF3C009039CB /* ClipSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B877E742586CF3E009039CB /* Build configuration list for PBXNativeTarget "ClipSmart" */;
+			buildPhases = (
+				2B877E602586CF3C009039CB /* Sources */,
+				2B877E612586CF3C009039CB /* Frameworks */,
+				2B877E622586CF3C009039CB /* Resources */,
+				2B877E802586D3F0009039CB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipSmart;
+			productName = ClipSmart;
+			productReference = 2B877E642586CF3C009039CB /* ClipSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B877E5C2586CF3C009039CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Anuj Parakh";
+				TargetAttributes = {
+					2B877E632586CF3C009039CB = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 2B877E5F2586CF3C009039CB /* Build configuration list for PBXProject "ClipSmart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B877E5B2586CF3C009039CB;
+			productRefGroup = 2B877E652586CF3C009039CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B877E632586CF3C009039CB /* ClipSmart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B877E622586CF3C009039CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B877E7B2586D2FD009039CB /* Cartfile in Resources */,
+				2B65F9E4258C27E0007F9569 /* Paste_AppleScript.scpt in Resources */,
+				2B65F9E3258C27E0007F9569 /* Check_Paste_AppleScript.scpt in Resources */,
+				2B877E6C2586CF3E009039CB /* Assets.xcassets in Resources */,
+				2B877E6F2586CF3E009039CB /* Main.storyboard in Resources */,
+				2BF677A7258965FE002B8B9E /* PasteListItem.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B877E602586CF3C009039CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B877E682586CF3C009039CB /* AppDelegate.swift in Sources */,
+				2B2444FD2587D57C00D60682 /* PasteListItem.swift in Sources */,
+				2B244503258818C700D60682 /* PasteListPanel.swift in Sources */,
+				2B877E782586D25B009039CB /* Utility.swift in Sources */,
+				2BF677A9258968DB002B8B9E /* LoadableView.swift in Sources */,
+				2B24450625881B7F00D60682 /* PasteboardUtility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B877E6D2586CF3E009039CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B877E6E2586CF3E009039CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B877E722586CF3E009039CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B877E732586CF3E009039CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2B877E752586CF3E009039CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClipSmart/ClipSmart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = ClipSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.ClipSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2B877E762586CF3E009039CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClipSmart/ClipSmart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = ClipSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.ClipSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B877E5F2586CF3C009039CB /* Build configuration list for PBXProject "ClipSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B877E722586CF3E009039CB /* Debug */,
+				2B877E732586CF3E009039CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B877E742586CF3E009039CB /* Build configuration list for PBXNativeTarget "ClipSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B877E752586CF3E009039CB /* Debug */,
+				2B877E762586CF3E009039CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B877E5C2586CF3C009039CB /* Project object */;
+}
