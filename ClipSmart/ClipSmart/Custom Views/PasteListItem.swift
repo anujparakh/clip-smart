@@ -15,7 +15,10 @@ class PasteListItem: NSView, LoadableView
     @IBOutlet weak var copyItemLabelScrollView: NSScrollView!
     @IBOutlet weak var numberLabel: NSTextField!
     // Things to add: button
-    
+    // Constraints to adjust when view isn't fully filled
+    @IBOutlet weak var scrollViewTopLayoutConstraint: NSLayoutConstraint!
+    @IBOutlet weak var scrollViewBottomLayoutConstraint: NSLayoutConstraint!
+
     var frameHeight: CGFloat = 0
     
     override init(frame frameRect: NSRect)
@@ -48,6 +51,7 @@ class PasteListItem: NSView, LoadableView
         copyItemLabel.string = text
         copyItemLabel.font = NSFont.systemFont(ofSize: 30)
 
+        print("---------------")
         print("Text Count: \(text.count)")
         
         if text.count > 80
@@ -63,7 +67,19 @@ class PasteListItem: NSView, LoadableView
             copyItemLabel.font = NSFont.systemFont(ofSize: 15)
         }
         
-        print(copyItemLabelScrollView.frame)
+        print(copyItemLabel.string)
+        print("Before: \(copyItemLabel.frame)")
+        if copyItemLabel.attributedString().size().height < copyItemLabelScrollView.frame.height
+        {
+            let constraintConstant = copyItemLabelScrollView.frame.height / 2 - copyItemLabel.attributedString().size().height / 2
+            scrollViewTopLayoutConstraint.constant = constraintConstant
+            scrollViewBottomLayoutConstraint.constant = constraintConstant
+            copyItemLabel.alignment = .center
+        }
+            
+        print("After: \(copyItemLabel.frame)")
+        print("---------------")
+
     }
     
     func showNumberLabel()

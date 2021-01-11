@@ -217,7 +217,7 @@ class PasteListPanel: NSPanel, NSWindowDelegate
         if PasteboardUtility.numCopied == 0
         {
             let messageView = PasteListItem(frame: self.contentView!.bounds)
-            messageView.copyItemLabel.string = "No Items Copied!"
+            messageView.setLabelText("No Items Copied!")
             self.contentView?.addSubview(messageView)
             return
         }

@@ -89,13 +89,13 @@ class AppDelegate: NSObject, NSApplicationDelegate
                 return
             }
             
-            // First check if panel should be shown
-            if (!checkPasteAccessible())
-            {
-                // Play the sound
-                NSSound.beep()
-                return
-            }
+//            // First check if panel should be shown
+//            if (!checkPasteAccessible())
+//            {
+//                // Play the sound
+//                NSSound.beep()
+//                return
+//            }
             
             
             // Then, calculate the size of the panel
